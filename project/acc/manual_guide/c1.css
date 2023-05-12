@@ -2,7 +2,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url('https://pandudwiyan.github.io/project/acc/manual_guide/image/bg.png');
+			background-image: url('https://raw.githubusercontent.com/pandudwiyan/pandudwiyan.github.io/master/project/acc/manual_guide/Image/bg.png');
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -72,11 +72,11 @@
 		}
 
 		.box:first-child {
-			background-image: url('./image/admin.png');
+			background-image: url('https://raw.githubusercontent.com/pandudwiyan/pandudwiyan.github.io/master/project/acc/manual_guide/Image/admin.png');
 		}
 
 		.box:last-child {
-			background-image: url('image/candidate.png');
+			background-image: url('https://raw.githubusercontent.com/pandudwiyan/pandudwiyan.github.io/master/project/acc/manual_guide/Image/candidate.png');
 		}
 
 		.container h2 span:last-child {
