@@ -2,7 +2,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url('image/bg.png');
+			background-image: url('/image/bg.png');
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
@@ -72,7 +72,7 @@
 		}
 
 		.box:first-child {
-			background-image: url('image/admin.png');
+			background-image: url('./image/admin.png');
 		}
 
 		.box:last-child {
