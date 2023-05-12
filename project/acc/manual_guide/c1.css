@@ -1,0 +1,93 @@
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('image/bg.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		* {
+		    font-family: 'Poppins';
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 45vh;
+		}
+		.image-container {
+			flex-direction: column;
+			height: 55vh;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.image {
+			width: 200px;
+			position: relative;
+			margin-bottom: 0px;
+		}
+		.box-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			height: 50vh;
+			margin-top: 20px;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			margin-top: 10px;
+			position: relative;
+			transition: transform 0.3s;
+			cursor: pointer;
+			background-size: cover;
+		}
+		.box:hover {
+			transform: translateY(-5px);
+		}
+		.box:active {
+			transform: scale(0.9);
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 28px;
+			margin-bottom: 0px;
+		}
+
+		.bear {
+			font-family: "Raleway", sans-serif;
+			font-weight: bold;
+			font-size: 33px;
+		}
+
+		.study {
+			font-family: "Raleway", sans-serif;
+			font-weight: 600;
+			color: #fec24d;
+			font-size: 33px;
+		}
+
+		.box:first-child {
+			background-image: url('image/admin.png');
+		}
+
+		.box:last-child {
+			background-image: url('image/candidate.png');
+		}
+
+		.container h2 span:last-child {
+			margin-top: 0;
+		}
+
+		a {
+		  color: white;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  color: #fab700;
+		}

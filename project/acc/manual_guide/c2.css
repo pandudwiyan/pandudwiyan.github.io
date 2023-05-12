@@ -1,0 +1,138 @@
+/* scrollbar tipis */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* warna scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('image/bg2.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+}
+
+* {
+  font-family: "Roboto","Arial",sans-serif;
+}
+
+.navbar {
+  background-color: #0b1d56;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-top: 35px;
+  height: 80vh;
+}
+
+
+.main-video {
+  flex: 0 0 70%;
+  padding-right: 20px;
+  position: absolute;
+}
+
+.playlist-container {
+  flex: 0 0 30%;
+  position: absolute;
+}
+
+.playlist-item {
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.playlist-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.playlist-item img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.playlist-info {
+  margin-left: 10px;
+}
+
+.playlist-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+h3.playlist-title {
+    cursor: pointer;
+}
+
+h3.playlist-title:hover {
+    color: #0b1d56;
+}
+
+.playlist-author, .playlist-views {
+  font-size: 12px;
+  color: #606060;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 85%; /* ubah angka sesuai kebutuhan */
+}
+
+.left-container {
+  width: 70%;
+  padding: 10px;
+  padding-left: 40px;  
+  padding-top: 20px;
+}
+
+.right-container {
+  width: 30%;
+  padding: 10px;
+}
+
+.video-title {
+  font-size: 24px;
+}

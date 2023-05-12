@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BearStudy | Manual Guide</title>
+	<link rel="icon" href="https://acc-dev1.outsystemsenterprise.com/BearStudy_CMS/img/BearStudy_CMS.BS_faviconremovebgpreview_1_.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="c2.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html"><img src="https://acc-dev1.outsystemsenterprise.com/BearStudy_CMS/img/BearStudy_CMS.bearstudykepaladoang.png" alt="logo" style="width: 180px;"></a>
+		<a href="index.html">
+		  <i class="fa fa-arrow-left" style="font-size: 13px;"></i>
+		  <span style="font-size: 14px; margin-left: 5px;"> Back</span>
+		</a>
+	</div>
+
+	<div class="main-container">
+		<!-- Bagian Kiri -->
+		<div class="left-container">
+			<video id="video-player" width="100%" height="auto" style="background-color: black; border-radius: 10px;" controls>
+		        <source id="video-source" src="vid/c1.mp4" type="video/mp4">
+		        Your browser does not support the video tag.
+		    </video>
+			<h3 id="tv" class="video-title">BearStudy - Login</h3>
+		</div>
+
+		<!-- Bagian Kanan -->
+		<div class="right-container">
+			<h3>Playlist - Manual Guide Candidate</h3>
+			<ul class="playlist">
+				<li class="playlist-item" data-video-src="vid/c1.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Login</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c2.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - View Test Library</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c3.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - View Detail Test</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c4.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Start Test Assessment</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c5.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Answer Question</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c6.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Revise</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c7.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Finish Attempt</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+				<li class="playlist-item" data-video-src="vid/c8.mp4">
+					<img src="image/tm.jpg" alt="video thumbnail">
+					<div class="playlist-info">
+						<h3 class="playlist-title">BearStudy - Logout</h3>
+						<span class="playlist-author">Pandu Dwiyan</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	  // Mengambil semua playlist item
+		const playlistItems = document.querySelectorAll('.playlist-item');
+
+		// Looping untuk setiap playlist item
+		playlistItems.forEach(function(item) {
+		  // Menambahkan event click pada setiap playlist item
+		  item.addEventListener('click', function() {
+		    // Mengambil judul playlist item yang diklik
+		    const title = item.querySelector('.playlist-title').textContent;
+
+		    // Memperbarui judul video
+		    const videoTitle = document.getElementById('tv');
+		    videoTitle.textContent = title;
+
+		    // Mengambil sumber video yang sesuai dengan playlist item yang diklik
+		    const videoSrc = item.dataset.videoSrc;
+
+		    // Memperbarui sumber video pada tag video
+		    const videoPlayer = document.getElementById('video-player');
+		    const source = videoPlayer.querySelector('source');
+		    source.src = videoSrc;
+		    videoPlayer.load();
+		  });
+		});
+	</script>
+</body>
+</html>
